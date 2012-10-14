@@ -409,7 +409,7 @@ def WriteFullOTAPackage(input_zip, output_zip):
   script.ShowProgress(0.5, 0)
   script.Print("CM10 FOR ZTE WARP")
   script.Print("")
-  script.Print("by Hroark13")
+  script.Print("by Hroark13 & PlayfulGod")
   script.Print("")
   script.Print("Unmounting Partitions")
   script.UnmountAll()
