@@ -24,6 +24,7 @@ TARGET_PROVIDES_RECOVERY_INIT_RC := true
 TARGET_RECOVERY_INITRC := device/zte/arthur/recovery/root/init.rc
 ARCH_ARM_HAVE_ARMV7A := true
 
+TARGET_KERNEL_CUSTOM_TOOLCHAIN := arm-eabi-4.4.3
 TARGET_KERNEL_CONFIG := cm10_defconfig
 TARGET_PREBUILT_KERNEL := device/zte/arthur/kernel
 
