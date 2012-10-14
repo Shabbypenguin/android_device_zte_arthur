@@ -13,7 +13,7 @@
 # limitations under the License.
 
 LOCAL_PATH:= $(call my-dir)
-include $(LOCAL_PATH)/../common.mk
+include $(LOCAL_PATH)/../../../../hardware/qcom/display/common.mk
 include $(CLEAR_VARS)
 LOCAL_MODULE                  := copybit.$(TARGET_BOARD_PLATFORM)
 LOCAL_MODULE_PATH             := $(TARGET_OUT_SHARED_LIBRARIES)/hw
