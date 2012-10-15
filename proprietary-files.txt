@@ -1,4 +1,4 @@
-# MS910-4G Proprietary-Files.txt
+# ZTE Warp Proprietary-Files.txt
 bin/qmuxd
 bin/hciattach
 bin/rmt_storage
