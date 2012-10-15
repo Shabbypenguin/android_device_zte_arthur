@@ -17,6 +17,6 @@ PRODUCT_LOCALES += hdpi
 # Discard inherited values and use our own instead.
 PRODUCT_NAME := full_arthur
 PRODUCT_DEVICE := arthur
-PRODUCT_BRAND := Boost Mobile
+PRODUCT_BRAND := BoostMobile
 PRODUCT_MODEL := N860
 PROUDCT_MANUFACTURER := ZTE

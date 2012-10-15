@@ -15,7 +15,7 @@ $(call inherit-product, device/zte/arthur/full_arthur.mk)
 ## Device identifier. This must come after all inclusions
 PRODUCT_DEVICE := arthur
 PRODUCT_NAME := cm_arthur
-PRODUCT_BRAND := Boost Mobile
+PRODUCT_BRAND := BoostMobile
 PRODUCT_MODEL := N860
 PRODUCT_MANUFACTURER := ZTE
 PRODUCT_CHARACTERISTICS := phone
