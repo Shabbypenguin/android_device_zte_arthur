@@ -139,7 +139,7 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
     gralloc.msm7x30 \
     hwcomposer.msm7x30 \
-    copybit.msm7x30
+    copybit.arthur
 
 PRODUCT_COPY_FILES += \
     device/zte/arthur/prebuilt/files/etc/firmware/a225_pfp.fw:system/etc/firmware/a225_pfp.fw \

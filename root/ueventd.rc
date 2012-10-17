@@ -151,9 +151,6 @@
 /dev/ion                0666    system      graphics
 /dev/msm_camera/*       0660    system      camera
 
-#regular apps need to be able to open ion
-/dev/ion               0664   	system    	system
-
 # sensors
 /dev/akm8975_daemon     0640    compass     system
 /dev/akm8975_aot        0640    compass     system

@@ -13,9 +13,10 @@
 # limitations under the License.
 
 LOCAL_PATH:= $(call my-dir)
+ifeq ($(TARGET_BOOTLOADER_BOARD_NAME),arthur)
 include $(LOCAL_PATH)/../../../../hardware/qcom/display/common.mk
 include $(CLEAR_VARS)
-LOCAL_MODULE                  := copybit.$(TARGET_BOARD_PLATFORM)
+LOCAL_MODULE                  := copybit.arthur
 LOCAL_MODULE_PATH             := $(TARGET_OUT_SHARED_LIBRARIES)/hw
 LOCAL_MODULE_TAGS             := optional
 LOCAL_C_INCLUDES              := $(common_includes) $(kernel_includes)
@@ -34,4 +35,5 @@ else
         LOCAL_SRC_FILES := software_converter.cpp copybit.cpp
         include $(BUILD_SHARED_LIBRARY)
     endif
+  endif
 endif
