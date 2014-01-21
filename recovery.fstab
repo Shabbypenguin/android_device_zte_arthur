@@ -1,0 +1,21 @@
+# mount point        fstype                device                        [device2]
+#/boot                emmc                /dev/block/mmcblk0p12
+#/recovery        emmc                /dev/block/mmcblk0p13
+#/system                ext4                /dev/block/mmcblk0p15
+#/cache                ext4                /dev/block/mmcblk0p17
+#/data                ext4                /dev/block/mmcblk0p18
+#/sdcard                vfat                /dev/block/mmcblk1p1
+#/sd-ext                ext4                /dev/block/mmcblk1p2
+
+# Android fstab file.
+# The filesystem that contains the filesystem checker binary (typically /system) cannot
+# specify MF_CHECK, and must come before any filesystems that do specify MF_CHECK
+
+#TODO: Add 'check' as fs_mgr_flags with data partition.
+# Currently we dont have e2fsck compiled. So fs check would failed.
+
+#<src>				<mnt_point>		<type>		<mnt_flags and options>
+/dev/block/mmcblk0p12		/boot			emmc		defaults defaults
+/dev/block/mmcblk0p15		/system			ext4		ro,barrier=1		wait
+/dev/block/mmcblk0p17		/cache			ext4		noatime,nosuid,nodev,barrier=1,noauto_alloc		wait
+/dev/block/mmcblk0p18		/data			ext4		noatime,nosuid,nodev,barrier=1,noauto_da_alloc		wait
