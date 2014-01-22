@@ -73,6 +73,4 @@ TARGET_RECOVERY_FSTAB := device/zte/arthur/recovery.fstab
 RECOVERY_FSTAB_VERSION := 2
 
 # Recovery Script
-#TARGET_PROVIDES_RELEASETOOLS := true
-#SKIP_SET_METADATA := true
-#TARGET_RELEASETOOL_OTA_FROM_TARGET_SCRIPT := device/zte/arthur/releasetools/metadata_to_perm.py
+USE_SET_METADATA := false
