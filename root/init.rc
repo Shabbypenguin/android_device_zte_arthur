@@ -146,28 +146,7 @@ mount yaffs2 mtd@userdata /data nosuid nodev
 mount yaffs2 mtd@persist /persist nosuid nodev
 mount yaffs2 mtd@cache /cache nosuid nodev
 mount yaffs2 mtd@persist /persist nosuid nodev
-
-on emmc-fs
-# mount mmc partitions
-wait /dev/block/mmcblk0p15
-mount ext4 /dev/block/mmcblk0p15 /system barrier=1
-chmod 0777 /system/bin/ext4check.sh
-#------userdata---------- 
-wait /dev/block/mmcblk0p18
-exec /system/bin/sh -c "/system/bin/fixebr.sh mmcblk0"
-exec /system/bin/format_vfat
-exec /system/bin/sh -c "/system/bin/ext4check.sh USERDATA /dev/block/mmcblk0p18"
-mount ext4 /dev/block/mmcblk0p18 /data nosuid nodev barrier=1 noauto_da_alloc
-#------persist---------- 
-wait /dev/block/mmcblk0p7
-exec /system/bin/sh -c "/system/bin/ext4check.sh PERSIST /dev/block/mmcblk0p7"
-mount ext4 /dev/block/mmcblk0p7 /persist nosuid nodev barrier=1
-#------cache---------- 
-wait /dev/block/mmcblk0p17
-exec /system/bin/sh -c "/system/bin/ext4check.sh CACHE /dev/block/mmcblk0p17"
-mount ext4 /dev/block/mmcblk0p17 /cache nosuid nodev barrier=1
-
-
+mount_all ./fstab.arthur
 
 on post-fs
 

@@ -21,7 +21,10 @@ PRODUCT_MANUFACTURER := ZTE
 TARGET_PREBUILT_KERNEL ?= kernel
 PRODUCT_COPY_FILES += $(LOCAL_PATH)/$(TARGET_PREBUILT_KERNEL):kernel
 
-PRODUCT_COPY_FILES +=
+PRODUCT_COPY_FILES += \
+    device/zte/arthur/rootdir/lib/modules/libra.ko:system/lib/modules/libra.ko \
+    device/zte/arthur/rootdir/lib/modules/libra_ftm.ko:system/lib/modules/libra_ftm.ko \
+    device/zte/arthur/rootdir/lib/modules/librasdioif.ko:system/lib/modules/librasdioif.ko
 
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.sf.lcd_density=240

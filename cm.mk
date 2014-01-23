@@ -21,6 +21,7 @@ PRODUCT_COPY_FILES += \
     device/zte/arthur/root/init.qcom.rc:/root/init.qcom.rc \
     device/zte/arthur/root/init.qcom.sh:/root/init.qcom.sh \
     device/zte/arthur/root/init.rc:/root/init.rc \
+    device/zte/arthur/root/fstab.arthur:root/fstab.arthur \
     device/zte/arthur/root/ueventd.rc:/root/ueventd.rc \
     device/zte/arthur/root/sbin/diagftmtest:/root/sbin/diagftmtest \
     device/zte/arthur/root/sbin/hci_qcomm_init:/root/sbin/hci_qcomm_init \
