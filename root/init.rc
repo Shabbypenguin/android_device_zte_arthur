@@ -146,7 +146,6 @@ mount yaffs2 mtd@userdata /data nosuid nodev
 mount yaffs2 mtd@persist /persist nosuid nodev
 mount yaffs2 mtd@cache /cache nosuid nodev
 mount yaffs2 mtd@persist /persist nosuid nodev
-mount_all ./fstab.arthur
 
 on post-fs
 

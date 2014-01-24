@@ -1,3 +1,8 @@
+on fs
+    mount_all fstab.arthur
+
+on boot
+
 service ds_fmc_appd /system/bin/ds_fmc_appd -p "rmnet0" -D
 group radio
 disabled

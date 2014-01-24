@@ -38,7 +38,7 @@ WIFI_POST_UNLOADER := "qcom_sdio_deinit"
 BOARD_WEXT_NO_COMBO_SCAN := true
 
 #BOARD_KERNEL_CMDLINE := console=ttyHSL0,115200,n8 androidboot.hardware=qcom vmalloc=512M kgsl.ptcount=16
-BOARD_KERNEL_CMDLINE := console=ttyMSM1,115200
+BOARD_KERNEL_CMDLINE := console=ttyMSM1,115200 androidboot.hardware=arthur
 BOARD_KERNEL_BASE := 0x00200000
 BOARD_KERNEL_PAGESIZE := 4096
 
@@ -74,3 +74,12 @@ RECOVERY_FSTAB_VERSION := 2
 
 # Recovery Script
 USE_SET_METADATA := false
+
+# Screen
+BOARD_HAS_SDCARD_INTERNAL := true
+BOARD_USES_MMCUTILS := true
+
+# Assert
+TARGET_OTA_ASSERT_DEVICE := arthur,warp
+
+
