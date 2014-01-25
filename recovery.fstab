@@ -12,5 +12,4 @@
 /dev/block/mmcblk0p18   	/data       		ext4    	rw,nosuid,nodev,barrier=1,noauto_da_alloc	check,wait
 /dev/block/mmcblk0p17   	/cache      		ext4    	rw,noatime,nosuid,nodev,barrier=1		check,wait
 /dev/block/mmcblk0p7    	/persist    		ext4    	rw,nosuid,nodev,barrier=1			wait
-/dev/block/mmcblk1p1		/sdcard	    		auto    	default						voldmanaged=sdcard:auto
-/dev/block/mmcblk1p2		/sd-ext	    		auto    	default						voldmanaged=sda:auto
+/dev/block/mmcblk1p1		/external_sd		vfat		defaults					recoveryonly

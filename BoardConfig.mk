@@ -64,9 +64,12 @@ TARGET_USE_CUSTOM_LUN_FILE_PATH := "/sys/devices/platform/msm_hsusb/gadget/lun0/
 BOARD_UMS_LUNFILE := "/sys/devices/platform/msm_hsusb/gadget/lun0/file"
 
 TARGET_RECOVERY_GUI := true
-DEVICE_RESOLUTION := 480x800
-TARGET_RECOVERY_PIXEL_FORMAT := "RGB_565"
+#DEVICE_RESOLUTION := 480x800
+#TARGET_RECOVERY_PIXEL_FORMAT := "RGBX_8888"
 BOARD_HAS_FLIPPED_SCREEN := true
+BOARD_CUSTOM_GRAPHICS := ../../../device/zte/arthur/recovery/minui/graphics.c
+#BOARD_CUSTOM_RECOVERY_KEYMAPPING:= ../../device/zte/arthur/recovery/minui/recovery_ui.c
+
 
 # Mounts
 TARGET_RECOVERY_FSTAB := device/zte/arthur/recovery.fstab
@@ -75,8 +78,8 @@ RECOVERY_FSTAB_VERSION := 2
 # Recovery Script
 USE_SET_METADATA := false
 
-# Screen
-BOARD_HAS_SDCARD_INTERNAL := true
+# SDCard
+BOARD_HAS_SDCARD_INTERNAL := false
 BOARD_USES_MMCUTILS := true
 
 # Assert
